@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nama');
             $table->string('nip');
-            $table->string('gender');
+            $table->enum('gender', ['L', 'P'])->default('L');
             $table->string('alamat');
             $table->string('kontak');
             $table->string('email');
